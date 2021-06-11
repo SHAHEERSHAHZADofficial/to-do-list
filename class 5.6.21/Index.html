@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS & bootstrap Link -->
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1 id="Mnh">ToDo List</h1>
+    <br>
+    <div class="row" id="maindv">
+		<div class="col-xs-4 col-xs-offset-4">
+            
+			<div class="floating-label-group">
+			<input type="text" id="username" class="form-control"  id="val" class="input" autocomplete="off" required />
+				<label class="floating-label">What To do?</label>
+         </div>
+                <button type="button" id="btn1" onclick="add()" id="ad" class="btn btn-primary" class="add-item "  >ADD ITEMS</button>
+                <!-- <button onclick="add()" id="ad" class="add-item">ADD ITEM</button> -->
+
+                <button type="button" id="btn2" class="btn btn-danger" onclick="deleteAll()"  class="add-item">DELETE ALL</button>
+                <!-- <button onclick="deleteAll()" id="dl" class="add-item">DELETE ALL</button> -->
+		
+			
+		</div>
+        <ul id="list">
+        
+        </ul>
+	</div>
+
+
+
+    <!-- script link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
